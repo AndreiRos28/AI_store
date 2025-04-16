@@ -32,7 +32,7 @@ SECRET_KEY = 'p=lix+=1iaickugvfq)x+#$+838#w-mo8)d9uy@@g*9)w)db7n'
 DEBUG = False
 ALLOWED_HOSTS = ['ai-store-1.onrender.com', 'localhost', '127.0.0.1']
 
-OPENAI_KEY = "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"
+OPENAI_KEY = "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"
 MONGO_URI = "mongodb+srv://storeadmin:admin123@cluster0.kogx0jj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
