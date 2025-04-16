@@ -33,9 +33,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['ai-recommender-k6wy.onrender.com', 'localhost', '127.0.0.1']
 
 OPENAI_KEY = "814dc492b6c76447b4b9ed956c79e0f6"
-MONGO_URI = "6f50392e6394b8aeec34f07bebb51d9f"
-
-
+MONGO_URI = "mongodb+srv://storeadmin:admin123@cluster0.kogx0jj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 
