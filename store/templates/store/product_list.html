@@ -20,6 +20,13 @@
         </ul>
         <a href="{% url 'add_product' %}">Add New Product</a>
 
+        {% for product in products %}
+            <h3>{{ product.product_name }}</h3>
+            <p>{{ product.product_description }}</p>
+            <p><strong>Tags:</strong> {{ product.tags }}</p>
+        {% endfor %}
+
+
     </ul>
 </body>
 </html>

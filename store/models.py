@@ -6,6 +6,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.FloatField()
     category = models.CharField(max_length=50)
+    tags = models.JSONField(default=list) 
 
     def __str__(self):
         return self.name
