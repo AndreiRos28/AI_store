@@ -32,21 +32,23 @@ def product_list(request):
 
 def add_product(request):
     if request.method == 'POST':
-        # Process the form submission
+        print("POST request received")
         form = ProductForm(request.POST)
         if form.is_valid():
             product = form.save(commit=False)
-            
-            # Generate tags for the product using OpenAI
-            product.tags = generate_tags(product.product_name, product.product_description)
-            
-            # Save the product to the database
-            product.save()
-            
-            # Redirect to the product list page
-            return redirect('product_list')
-    else:
-        # Show an empty form if the request method is not POST
-        form = ProductForm()
+            print("Product form is valid")
+            print("Generating tags for:", product.product_name, product.product_description)
 
+            description = product.product_description or "No description provided"
+            product.tags = generate_tags(product.product_name, description)
+
+            print("Tags generated:", product.tags)
+            product.save()
+            return redirect('product_list')
+        else:
+            print("Form is invalid:", form.errors)
+    else:
+        form = ProductForm()
+    
     return render(request, 'store/add_product.html', {'form': form})
+
