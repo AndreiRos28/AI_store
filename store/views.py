@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from .forms import ProductForm
 from .models import Product
 
-openai.api_key = os.getenv(OPENAI_KEY)  
+openai.api_key ='814dc492b6c76447b4b9ed956c79e0f6' 
 
 def generate_tags(product_name, description):
     try:
