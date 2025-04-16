@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from .forms import ProductForm
 from .models import Product
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 def generate_tags(product_name, description):
     try:
