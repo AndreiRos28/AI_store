@@ -4,8 +4,7 @@ from django.shortcuts import render, redirect
 from .forms import ProductForm
 from .models import Product
 
-# Set your OpenAI API key (from .env or direct, for now we read from env)
-openai.api_key = os.getenv("OPENAI_KEY")  # Or replace with actual key for testing
+openai.api_key = os.getenv(OPENAI_KEY)  
 
 def generate_tags(product_name, description):
     try:
