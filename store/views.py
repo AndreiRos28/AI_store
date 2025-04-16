@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from .forms import ProductForm
 from .models import Product
 
-openai.api_key ='814dc492b6c76447b4b9ed956c79e0f6' 
+openai.api_key ='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' 
 
 def generate_tags(product_name, description):
     try:
@@ -28,7 +28,6 @@ def add_product(request):
         form = ProductForm(request.POST)
         if form.is_valid():
             product = form.save(commit=False)
-            # Generate tags from OpenAI
             product.tags = generate_tags(product.product_name, product.product_description)
             product.save()
             return redirect('product_list')
