@@ -30,7 +30,7 @@ import os
 
 SECRET_KEY = 'p=lix+=1iaickugvfq)x+#$+838#w-mo8)d9uy@@g*9)w)db7n'
 DEBUG = False
-ALLOWED_HOSTS = ['ai-recommender-k6wy.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ai-store-1.onrender.com', 'localhost', '127.0.0.1']
 
 OPENAI_KEY = "814dc492b6c76447b4b9ed956c79e0f6"
 MONGO_URI = "mongodb+srv://storeadmin:admin123@cluster0.kogx0jj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
