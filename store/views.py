@@ -5,7 +5,7 @@ from .forms import ProductForm
 from .models import Product
 
 # Load the OpenAI API key from the environment
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = os.getenv('814dc492b6c76447b4b9ed956c79e0f6')
 
 def generate_tags(product_name, description):
     try:
