@@ -28,12 +28,14 @@ DEBUG = True
 import os
 
 
-SECRET_KEY = os.getenv('p=lix+=1iaickugvfq)x+#$+838#w-mo8)d9uy@@g*9)w)db7n, fallback_dev_secret')
+SECRET_KEY = 'p=lix+=1iaickugvfq)x+#$+838#w-mo8)d9uy@@g*9)w)db7n'
 DEBUG = False
-ALLOWED_HOSTS = ['ai-recommder-k6wy.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ai-recommender-k6wy.onrender.com', 'localhost', '127.0.0.1']
 
-OPENAI_KEY = os.getenv("814dc492b6c76447b4b9ed956c79e0f6")
-MONGO_URI = os.getenv("6f50392e6394b8aeec34f07bebb51d9f")
+OPENAI_KEY = "814dc492b6c76447b4b9ed956c79e0f6"
+MONGO_URI = "6f50392e6394b8aeec34f07bebb51d9f"
+
+
 
 
 
